@@ -1,41 +1,111 @@
-﻿# Bancking_system
- 💳 Bank System
-🏦 Overview
-A simple Bank System that allows Clients, Employees, and Admins to manage accounts, make transactions, and handle user data. The system includes three main modules:
+# 🏦 Bank Management System
 
-Client Module: For individual clients to manage their accounts.
+## 📌 Overview
 
-Employee Module: For employees to manage clients and perform basic tasks.
+The **Bank Management System** is a multi-user console-based application that simulates the core functionalities of a bank. The system supports three main user roles: **Client**, **Employee**, and **Admin**, each with different permissions and responsibilities.
 
-Admin Module: Admins manage employees and perform administrative tasks.
+This project was developed collaboratively by a team of students as a part of a university assignment, aiming to apply object-oriented programming, file handling, validation, and interface design in C++.
 
-🔑 Features
-1. Client Module
-Login: Clients can log in using their ID and password.
+---
 
-Balance Management: Clients can check their account balance, deposit, or withdraw money.
+## 👥 Team Members
 
-Money Transfer: Clients can send money to other clients.
+- Member 1: [Name]
+- Member 2: [Name]
+- Member 3: [Name]
+- Member 4: [Name]  
+*(Feel free to edit and add full names or GitHub usernames)*
 
-2. Employee Module
-Login: Employees can log in using their credentials.
+---
 
-Add Clients: Employees can add new clients.
+## 🧩 System Modules
 
-Manage Clients: Employees can search for clients, edit their details, and list all clients.
+### 1️⃣ Client Module
+- Each client has: `ID`, `Name`, `Password`, `Balance`
+- Clients can:
+  - Login to the system
+  - Deposit and withdraw money
+  - Transfer money to another client
+  - Check their balance
 
-3. Admin Module
-Employee Management: Admin can add, edit, or list employees.
+### 2️⃣ Employee Module
+- Each employee has: `ID`, `Name`, `Password`, `Salary`
+- Employees can:
+  - Login to the system
+  - Add, edit, search, and list clients
+  - View their own info
 
-Admin Privileges: Admins have the same rights as employees but with added privileges to manage employees.
+### 3️⃣ Admin Module
+- Admin inherits from Employee with additional privileges:
+  - Add, edit, search, and list employees
+  - Manage both clients and employees
 
-🔧 How It Works
-The Person class is the base for both Client and Employee.
+---
 
-Client inherits basic info from Person and adds functionality for transactions.
+## 🏗️ System Structure
 
-Employee inherits from Person and adds the ability to manage clients.
+- ✅ **Inheritance Hierarchy**:  
+  - `Person` → Base class (ID, Name, Password)  
+  - `Client` & `Employee` inherit from `Person`  
+  - `Admin` inherits from `Employee`
 
-Admin inherits from Employee and adds the ability to manage employees.
+- ✅ **Validation Class**:  
+  Centralized static validation functions for name, password, balance, and salary.
 
+- ✅ **Data Persistence**:  
+  Information is saved and retrieved from `.txt` files (`Clients.txt`, `Employees.txt`, `Admins.txt`).
+
+- ✅ **Parser & FileManager**:  
+  Responsible for reading from and writing to files, and converting string data to objects.
+
+---
+
+## 🔨 Application Phases
+
+### 🚧 Phase 1: Core Classes
+- Implement `Client`, `Employee`, `Admin` classes with validation
+- Include deposit, withdraw, transfer, and display functions
+
+### 💾 Phase 2: File Handling
+- Implement `DataSourceInterface` and file operations
+- Store all users' data in `.txt` files
+- Develop `Parser`, `FilesHelper`, and `FileManager`
+
+### 🧠 Phase 3: System Logic & UI
+- Implement login, menus, and session management for:
+  - `ClientManager`
+  - `EmployeeManager`
+  - `AdminManager`
+  - `Screens` for UI flow and user interaction
+
+---
+
+## 🖥️ Technologies Used
+
+- Programming Language: **C++**
+- Concepts Applied:
+  - OOP (Inheritance, Encapsulation)
+  - File I/O operations
+  - Abstract classes & interfaces
+  - Static utility classes
+  - Vectors & pointers
+
+---
+
+## ✅ Future Enhancements
+- Add persistent login session
+- GUI version with Qt or web interface
+- Advanced error handling and logging
+
+---
+
+## 🧑‍💻 How to Run
+
+1. Compile all `.cpp` files using any C++ compiler.
+2. Run the program via terminal/console.
+3. Use the on-screen menu to navigate as client, employee, or admin.
+
+---
+
+📬 *For any inquiries, suggestions, or collaboration, feel free to contact the project team.*
 
