@@ -102,7 +102,4 @@ This project was developed collaboratively by a team of students as a part of a 
 2. Run the program via terminal/console.
 3. Use the on-screen menu to navigate as client, employee, or admin.
 
----
-
-📬 *For any inquiries, suggestions, or collaboration, feel free to contact the project team.*
 
