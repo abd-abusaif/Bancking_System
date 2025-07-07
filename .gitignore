@@ -1,0 +1,23 @@
+# Ignore build folders and VS-specific files
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+*.exe
+*.obj
+*.pdb
+*.ipch
+*.log
+*.tlog
+*.ilk
+*.cache
+*.db
+*.sdf
+*.opensdf
+
+# Optional: VS Code settings (≈–« „‘ ÷—Ê—Ì  —›⁄Â)
+.vscode/
