@@ -4,7 +4,7 @@
 
 The **Bank Management System** is a multi-user console-based application that simulates the core functionalities of a bank. The system supports three main user roles: **Client**, **Employee**, and **Admin**, each with different permissions and responsibilities.
 
-This project was developed collaboratively by a team of students as a part of a university assignment, aiming to apply object-oriented programming, file handling, validation, and interface design in C++.
+This project was developed collaboratively by a team of students as a part of a Course assignment, aiming to apply object-oriented programming, file handling, validation, and interface design in C++.
 
 ---
 
