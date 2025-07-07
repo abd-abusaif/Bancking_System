@@ -10,12 +10,9 @@ This project was developed collaboratively by a team of students as a part of a 
 
 ## 👥 Team Members
 
-- Member 1: [Name]
-- Member 2: [Name]
-- Member 3: [Name]
-- Member 4: [Name]  
-*(Feel free to edit and add full names or GitHub usernames)*
-
+- Member 1: [ِAbdulrahman Saad]
+- Member 2: [Rahma Ameen]
+- Member 3: [Abdulaa]
 ---
 
 ## 🧩 System Modules
